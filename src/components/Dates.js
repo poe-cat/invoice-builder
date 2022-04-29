@@ -1,16 +1,16 @@
-export default function Dates({invoiceNumber, invoiceDate, dueDate}) {
+export default function Dates({invoicePlace, invoiceDate, dueDate}) {
     return (
         <>
-       <article className="my-5 flex items-end justify-end">
+       <article className="mt-2 mb-16 flex items-end justify-end">
          <ul>
-          <li className="p-1">
-            <span className="font-bold">Invoice number: </span> {invoiceNumber}
+          <li className="p-1 text-sm">
+            <span className=" text-sm font-bold">Miejsce wystawienia: </span> {invoicePlace}
           </li>
-           <li className="bg-gray-100">
-            <span className="font-bold">Invoice date: </span> {invoiceDate}
+           <li className="bg-gray-100 text-sm">
+            <span className="font-bold">Data wystawienia: </span> {invoiceDate}
           </li>
-           <li className="p-1">
-            <span className="font-bold">Due date: </span> {dueDate}
+           <li className="p-1 text-sm">
+            <span className="font-bold">Data sprzedaży: </span> {dueDate}
            </li>
          </ul>
        </article>
