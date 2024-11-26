@@ -192,7 +192,7 @@ export default function TableForm({description, setDescription,
     <div>
         <h2 className="flex items-end justify-end
         text-gray-800 text-xl font-bold">
-        Razem: {total.toLocaleString()} zł
+        Razem: {total.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, " ")} zł
         </h2>
     </div>
     </>
